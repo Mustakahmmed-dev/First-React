@@ -1,16 +1,25 @@
 
-import './App.css'
+import './App.css';
+import Books from './Books';
 
 function App() {
   return (
     <>
     <h1>The First React</h1>
-    <Student name='Akbar' dept='Science'></Student>
+
+    {/* <Student name='Akbar' dept='Science'></Student>
     <Student name='Liakot' dept='Economic'></Student>
     <Student name='Shaykot' dept='Sports'></Student>
     <Developer name='Soyed' tech='JS, Java' occu='Software Engineer'></Developer>
     <Developer name='Jayed' tech='Java, C' occu='Software Engineer'></Developer>
-    <Developer name='Foyez' tech='Python, Java' occu='DevOps Engineer'></Developer>
+    <Developer name='Foyez' tech='Python, Java' occu='DevOps Engineer'></Developer> */}
+
+      <Books name='JS' price={200} available={true}></Books>
+      <Books name='C++' price={500} available={false}></Books>
+      <Books name='Python' price={900} available={true}></Books>
+      <Books name='JS Bangla' price={250} available={true}></Books>
+      <Books name='JS Bangla' price={250} available={true}></Books>
+
 
     </>
   )
