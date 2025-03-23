@@ -44,7 +44,9 @@ function Developer({name, tech, occu}){
     <div>
       <h2>Name: {name} </h2>
       <h4>Technologies: {tech} </h4>
-      <h4>Occupation: {occu} </h4>
+      <h4>Occupation: 
+        {occu == "Software Engineer" ? <p> {occu}, Good Choice </p> : <p> {occu} Not bad</p> }
+      </h4>
     </div>
   )
 }
