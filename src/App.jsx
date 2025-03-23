@@ -1,11 +1,32 @@
 
 import './App.css';
 import Books from './Books';
+import Actor from './Actor';
+import Singer from './Singer';
 
 function App() {
+  const actors = ["Jampi", "Jacky", "Luckky", "Ohay", "Termia"];
+
+  const singers = [
+    {id: 1, name: "James", age: 43, country: "United States"},
+    {id: 2, name: "Hurry", age: 87, country: "United States"},
+    {id: 3, name: "Torry", age: 45, country: "United States"},
+    {id: 4, name: "Harris", age: 21, country: "United Arab Emirates"},
+  ];
+
   return (
     <>
     <h1>The First React</h1>
+
+    {
+      singers.map(singer => <Singer singer={singer}></Singer>)
+    }
+
+    {/* <p> Total: {actors.length} </p>
+    {
+      actors.map(actor => <Actor actor={actor} ></Actor>)
+    } */}
+
 
     {/* <Student name='Akbar' dept='Science'></Student>
     <Student name='Liakot' dept='Economic'></Student>
@@ -14,11 +35,12 @@ function App() {
     <Developer name='Jayed' tech='Java, C' occu='Software Engineer'></Developer>
     <Developer name='Foyez' tech='Python, Java' occu='DevOps Engineer'></Developer> */}
 
-      <Books name='JS' price={200} available={true}></Books>
+      {/* <Books name='JS' price={200} available={true}></Books>
       <Books name='C++' price={500} available={false}></Books>
       <Books name='Python' price={900} available={true}></Books>
       <Books name='JS Bangla' price={250} available={true}></Books>
-      <Books name='JS Bangla' price={250} available={true}></Books>
+      <Books name='JS Bangla' price={250} available={true}></Books> */}
+
 
 
     </>
